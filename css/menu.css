@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* リセット CSS Document */
+@import url("html5doctor_reset.css");
+
+
+/*-----------menu-------------*/
+#menuitembox{
+  width: 60vw;
+}
+.drinkfood-box{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.drink-name, .food-name{
+  width: 40vw;
+  margin-left: 10vw;
+}
+.drink-price, .food-price{
+  width: 10vw;
+}
+#menuitembox h1{
+  font-family: "メイリオ", Meiryo, HiraginoSans-W, sans-serif;
+  font-size: 10vw;
+  color: #4B4B4B;
+  letter-spacing: 0;
+  white-space: nowrap;
+  margin-bottom: 1vw;
+}
+#menuitembox p{
+  margin-bottom: 0.8vw;
+  font-size: 0.8vw;
+}
+
+
+@media screen and (max-width:480px){
+#menubox{
+  display: none;
+}
+#menuitembox{
+  width: 100vw;
+  margin-bottom: 15vw;
+}
+#menuitembox p{
+  margin-bottom: 3vw;
+  font-size: 3vw;
+}
+.drink-name, .food-name{
+  width: 70vw;
+  margin-left: 10vw;
+}
+.drink-price, .food-price{
+  width: 20vw;
+}
+#menuitembox h1{
+  text-align: center;
+  margin-top: 15vw;
+}
+
+
+}

@@ -1,0 +1,245 @@
+@charset "utf-8";
+/* リセット CSS Document */
+@import url("html5doctor_reset.css");
+
+
+#box{
+  width: 100vw;
+  margin: 0 auto 0;
+  position: relative;
+}
+#box p{
+  position: absolute;
+  left: -50vw;
+}
+
+
+
+.charbase,p{
+  font-family: "メイリオ", Meiryo, HiraginoSans-W, sans-serif;
+  font-size: 0.7vw;
+  color: #4B4B4B;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+a{
+  text-decoration:none;
+}
+ul{
+  list-style: none;
+}
+.box{
+  width: auto;
+  height: auto;
+  margin: 0 auto 0;
+  padding-top: 60px;
+}
+.midashi{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-30px) scale(1.2,1.2);
+}
+
+
+.iconbox{
+  margin: 30px auto 0;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.snslink svg{
+  margin: 0 3vw;
+  height: 1.8vw;
+}
+
+
+
+.honbun{
+  width: 16vw;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+.honbun p{
+  line-height: 1vw;
+  margin-bottom: 0.4vw;
+}
+.botan{
+  width: 20vw;
+}
+h1{
+  margin-bottom: 3.5vw;
+}
+
+
+
+/*-----------top-------------*/
+#backgroundimag-top{
+  width: 30vw;
+  height: auto;
+  position: relative;
+}
+#trigger-overlay{
+  position: fixed;
+  left: -100px;
+}
+#nav-menu{
+  position: absolute;
+  top: 20px;
+  left: 283px;
+  z-index: 100px;
+  display: none;
+}
+header{
+  background-color: #129843;
+  height: 22vw;
+}
+#topmidasi{
+  width: 30vw;
+  position: absolute;
+  top: 30vw;
+  left: 50%;
+  transform: translate(-50%,-30px) scale(1.2,1.2);
+}
+header a{
+  width: 25vw;
+  position: absolute;
+  top: 40vw;
+  left: 50%;
+  transform: translate(-50%,-30px) scale(1.2,1.2);
+}
+header div{
+  width: 100vw;
+  height: 30vw
+  position: absolute;
+  top: 30vw;
+  left: 50%;
+  transform: translate(-50%,-30px) scale(1.2,1.2);
+  background-color: rgba( 255, 255, 255, 0.55 );
+}
+
+
+
+
+/*-----------aboutus-------------*/
+#aboutus{
+/*  background-color: #F9E6D6;*/
+}
+#aboutus .honbun{
+  margin-top: 20px;
+}
+
+
+
+
+/*-----------footer-------------*/
+
+footer{
+  z-index: 100px;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #67C5DE;
+  padding: 5vw 0 5vw;
+  background-color: rgba( 255, 255, 255, 0.55 );
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+footer section{
+  width: 25vw;
+}
+
+
+h1{
+  text-align: center;
+}
+#images{
+  margin-bottom: 20vw;
+}
+.images{
+  width: 100vw;
+  height: auto;
+  margin-bottom: 10vw;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:480px){
+/*画面幅が480pxまでの時*/
+
+#box{
+  display: block;
+}
+#mainbox,#menubox,#otherbox{
+  width: 100vw;
+}
+p{
+  font-size: 3vw;
+}
+.charbase{
+  font-size: 2.5vw;
+}
+.snslink svg{
+  margin: 0 2vw;
+  height: 6vw;
+}
+.snsicon{
+  width: 40px;
+}
+.honbun{
+  width: 68vw;
+}
+.honbun p{
+  line-height: 4.5vw;
+  margin-bottom: 2vw;
+}
+#backgroundimag-top{
+  width: 100vw;
+}
+header{
+  height: 66vw;
+}
+#logo{
+  width: 45vw;
+}
+#information{
+  top: 65vw;
+  left: 48vw;
+}
+#nav-menu{
+  position: fixed;
+  top: 20px;
+  left: 90vw;
+  display: block;
+}
+#nav-menu svg{
+  width: 6vw;
+}
+#img1,#img3{
+  width: 45vw;
+}
+#img2{
+  width: 55vw;
+}
+#access{
+  height: 49vw;
+}
+#map-svg{
+  width: 65vw;
+}
+#map div{
+  height: 41vw;
+  margin-top: 5vw;
+}
+#map div a svg{
+  width: 20vw;
+  margin-left: 5vw;
+  margin-top: 10vw;
+}
+
+
+}
